@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Join Screen -->
+  <div id="join-screen">
+    <h1>Join Guessing Game Session</h1>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="join-btn">Join Session</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" style="display:none;">
+    <!-- Chat Interface -->
+    <div id="chat-container">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your guess or message">
+      <button id="send-btn">Send</button>
+    </div>
+    <!-- Players List -->
+    <div id="players-container">
+      <h2>Players</h2>
+      <ul id="players-list"></ul>
+    </div>
+    <!-- Game Master Panel (visible only to the Game Master) -->
+    <div id="game-master-panel" style="display:none;">
+      <h2>Game Master Panel</h2>
+      <input type="text" id="question" placeholder="Enter question">
+      <input type="text" id="answer" placeholder="Enter answer">
+      <button id="create-btn">Create Question</button>
+      <!-- Optionally, you can have a separate start button if needed -->
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <!-- Socket.IO library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- MVC JS files -->
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>
+
+

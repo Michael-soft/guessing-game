@@ -1,0 +1,121 @@
+
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+  
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container styles for join and game screens */
+#join-screen, #game-screen {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: hwb(0 100% 0%);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#join-screen:hover, #game-screen:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+h1, h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input and button styles */
+input[type="text"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #74ebd5;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  transform: scale(1.05);
+}
+
+/* Chat container styles */
+#chat-container {
+  border: 1px solid #ddd;
+  height: 320px;
+  overflow-y: auto;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Chat messages style */
+#chat-messages p {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+}
+
+/* Container for players list */
+#players-container {
+  margin-top: 30px;
+  text-align: left;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+/* Game Master Panel Styling */
+#game-master-panel {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Status area styling */
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  padding: 10px;
+  border-top: 2px solid #eee;
+}
+
